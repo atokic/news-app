@@ -1,0 +1,38 @@
+@import "../../variables";
+
+.iconBarItems
+{
+  width: 63px;
+  height:63px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: $fontInterVSemi;
+  font-size: 10px;
+  line-height: 14px;
+  text-align: center;
+  letter-spacing: 0.1px;
+  color: $color-grey;
+  padding: 14px 0px;
+  transition: all 0.3s ease;
+}
+
+.linkActive {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: $fontInterVSemi;
+  font-size: 10px;
+  line-height: 14px;
+  text-align: center;
+  letter-spacing: 0.1px;
+  color: $color-red;
+  background-color: $color-white;
+  width: 63px;
+  height:63px;
+  border-radius: 5px;
+  box-shadow: 0px 1px 2px -1px $color-box-shadow;
+  transition: all 0.3s ease;
+}

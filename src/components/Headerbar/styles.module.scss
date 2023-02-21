@@ -1,0 +1,79 @@
+@import "../../variables";
+
+.newsHeaderBar {
+    width: 100%;
+    height: 60px;
+    left: 0px;
+    top: 0px;
+    background: linear-gradient(180deg, $color-red 71.29%, $color-red-dark 99.95%);
+    position: fixed;
+    display: flex;
+    align-items: center;
+    z-index: 1000;
+}
+
+.headerContentHolder {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1 1 100%;
+    padding: 1rem 0rem;
+    margin: 0 auto;
+
+    @media screen and (min-width: 360px) {
+        max-width: 400px;
+    }
+    @media screen and (min-width: 600px) {
+        max-width: 600px;
+    }
+
+    @media screen and (min-width: 900px) {
+        max-width: 1095px;
+    }
+}
+
+.newsHeaderbarTitle {
+    flex: 0 1 25%;
+    font-family: $fontInterVBold;
+    font-style:  normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+    letter-spacing: -0.136px;
+    color: $color-white;
+}
+
+.newsHeaderbarText {
+    font-family: $fontInter;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: -0.119px;
+    color: $color-white;
+    flex: 1 1 auto;
+}
+
+.newsHeaderbarButton {
+    background-color: $color-white;
+    border-radius: 8px;
+    color: $color-grey;
+    font-family: $fontInterVBold;
+    font-size: 14px;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 0.5rem 1.5rem;
+    margin: 0 0.75rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    flex: 0 1 6%;
+  }
+
+.newsHeaderbarEndButton {
+    font-family: $fontInterVBold;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    color: $color-white;
+    margin: 0 0.5rem;
+    flex: 0 1 10%;
+}

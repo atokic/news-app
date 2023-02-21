@@ -1,0 +1,102 @@
+@import "../../variables";
+
+.searchHolder{
+    display: flex;
+    padding: 2rem 0rem;
+    border-bottom: 1px solid rgba(151,151,151,0.1);
+
+    @media screen and (max-width: $mobile-width) {
+        max-width: 400px;
+        display: flex;
+        flex-direction: column;    
+        border-bottom: 0px solid rgba(151,151,151,0.1);
+        padding: 0.6rem;
+      }
+      @media screen and (min-width: $tablet-width) {
+        max-width: $tablet-width;
+  
+      }
+      @media screen and (min-width: 900px) {
+        max-width: 1095px;
+      }
+
+    .searchTitle{
+        flex: 0 1 20%;
+        span {
+            font-family: $fontInter;
+            font-size: 32px;
+            font-weight: 900;
+
+            &.titleMy {
+                color: $color-red;
+            }
+            &.titleNews {
+                color: $color-black;
+            }
+        }
+
+        @media screen and (max-width: $mobile-width) {
+            max-width: 400px;
+            margin-bottom: 0.5rem;
+          }
+          @media screen and (min-width: $tablet-width) {
+            max-width: $tablet-width;
+          }
+          @media screen and (min-width: 900px) {
+            max-width: 1095px;
+          }
+    }
+
+    .inputHolder {
+        flex: 0 1 60%;
+        display: flex;
+        height: 50px;
+        justify-content: flex-start;
+        background: $color-white;
+        padding: 5px;
+        border-radius: 10px;
+        box-shadow: 0px 1px 2px -1px $color-box-shadow;
+        
+        @media screen and (max-width: $mobile-width) {
+            display: flex;
+            justify-content: center;
+          }
+          @media screen and (min-width: $tablet-width) {
+            max-width: $tablet-width;   
+          }
+          @media screen and (min-width: 900px) {
+            max-width: 1095px;
+          }
+
+        .searchIcon {
+            margin: auto 15px;
+            font-size: 20px;
+            color: #A5A5A4;
+        }
+
+        .searchInput {
+            flex: 1 1 auto;
+            outline: none;
+            border: none;
+            ::placeholder {
+                color: $color-grey;
+                opacity: 0.4;
+                font-size: 15px;
+                font-family: $fontInterV;
+            }
+        }
+
+        .searchBtn {
+            flex: 0 0 15%;
+            border-radius: 6px;
+            background: $color-red;
+            color: $color-white;
+            border: none;
+            text-transform: uppercase;
+            text-align: center;
+            font-family: $fontInterVBold;
+            font-size: 15px;
+            cursor: pointer;
+        }
+    }
+}

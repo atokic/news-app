@@ -1,0 +1,32 @@
+@import "../../variables";
+
+.newsContainer{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(auto-fill, 260px);
+  grid-row-gap: 20px;
+  grid-column-gap: 20px;
+  @media screen and (max-width:$tablet-width)  {
+    grid-template-columns: repeat(1, 1fr);
+    grid-auto-rows: 260px;
+  }
+}
+.firstFourNewsContainer{
+  grid-row: span 2;
+  grid-column: span 2;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 260px);
+  grid-row-gap: 20px;
+  grid-column-gap: 20px;
+  @media screen and (max-width:$tablet-width)  {
+    grid-template-columns: repeat(1, 1fr);
+    grid-auto-rows: 260px;
+    grid-column: span 1;
+  }
+
+}
+
+.latestNewsContainer {
+  grid-row: span 2;
+}

@@ -1,0 +1,103 @@
+@import "../../variables";
+
+.newsWidgetCard {
+    height: 100%;
+    border-radius: 8px;
+    display: block;
+    overflow: hidden;
+    background: $color-white;
+    box-shadow: 0 1px 2px -1px $color-box-shadow;
+}
+
+.newsWidgetHead {
+    padding: 15px 15px 0px 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.newsWidgetMainTitle {
+    margin-left: 3%;
+    font-family: $fontInterVMedium;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: -0.11px;
+    color: $color-black;
+}
+.newsWidgetIconHolder {
+    left: calc(100% - 50px);
+    height: 20px;
+    width: 20px;
+    background: rgba(187, 30, 30, 0.24);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.newsWidgetItem {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    border: 1px solid #F4F5F8;
+
+    &:not(:first-child){
+        padding-top: 5px;
+    }
+}
+
+.newsWidgetTitle {
+    font-family: $fontInter;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: -0.11px;
+    color: $color-black;
+}
+
+.newsWidgetBody {
+    padding: 10px 15px;
+}
+
+.newsWidgetList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    max-height: 450px;
+    overflow: auto;
+}
+
+.newsWidgetLink {
+    text-decoration: none;
+}
+
+.newsWidgetTime {
+    font-family: $fontInterVBold;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 16px;
+    letter-spacing: -0.0153846px;
+    text-transform: uppercase;
+    color: $color-blue;
+}
+
+.newsWidgetAllNews {
+    margin-top: 0.5rem;
+    margin-left: 1rem;
+    font-family: $fontInterVMedium;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: -0.09625px;
+    color: $color-blue;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.newsWidgetAllNewsIcon {
+    color: $color-grey;
+    margin-left: 2px;
+}

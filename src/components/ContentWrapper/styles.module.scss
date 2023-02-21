@@ -1,0 +1,66 @@
+@import "../../variables";
+
+.mainWrapper {
+    margin: 0 auto;
+    margin-top: 60px;
+
+    @media screen and (max-width: $mobile-width) {
+      max-width: 400px;
+      margin-top: 0px;
+    }
+    @media screen and (min-width: $tablet-width) {
+      max-width: $tablet-width;
+    }
+    @media screen and (min-width: 900px) {
+      max-width: 1095px;
+    }
+}
+
+.tab{
+
+  padding: 0.5rem;
+  border-radius: 20px;
+  color: $color-black;
+  font-weight: 900;
+  margin: auto 1rem;
+  &.active{
+    background: rgba(187, 30, 30, 0.1);
+    color: $color-red;
+  }
+}
+.contentWrapper {
+  display: flex;
+  margin-top: 1.5rem;
+
+  .sidebar {
+    flex: 0 0 5%;
+    margin-right: 0.5rem;
+
+    @media screen and (max-width: $mobile-width) {
+      max-width: 0px;
+    }
+    @media screen and (min-width: $tablet-width) {
+      max-width: $tablet-width;
+    }
+    @media screen and (min-width: 900px) {
+      max-width: 1095px;
+    }
+  }
+
+  .newsWrapper {
+    flex: 1 1 90%;
+  }
+
+  @media screen and (max-width: $mobile-width) {
+    max-width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  @media screen and (min-width: $tablet-width) {
+    max-width: $tablet-width;
+  }
+  @media screen and (min-width: 900px) {
+    max-width: 1095px;
+  }
+}
