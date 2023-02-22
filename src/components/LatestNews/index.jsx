@@ -58,7 +58,7 @@ const LatestNews = ({ latestNews, loading, fetchLatestNewsAction,sources,fetchSo
             <div ref={loadMoreRef}>{loading && <Loader />}</div>
         </ul>
       </div>
-        <a class={Classes.newsWidgetAllNews} href="/"><p>See all news</p>
+        <a className={Classes.newsWidgetAllNews} href="/"><p>See all news</p>
         <SlArrowRight className={Classes.newsWidgetAllNewsIcon}/></a>
     </div>
   )

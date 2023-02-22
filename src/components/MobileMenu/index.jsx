@@ -3,7 +3,6 @@ import { NavLink } from "react-router-dom";
 import { ImNewspaper, ImDisplay } from 'react-icons/im';
 import { MdOutlineClose, MdSearch, MdOutlineHome, MdOutlineFavoriteBorder, MdOutlineBusinessCenter, MdOutlineScience, MdOutlineHealthAndSafety, MdSportsSoccer } from 'react-icons/md';
 import Classes from './styles.module.scss';
-import { useMaxMediaQuery } from "../../hooks/useMediaQuery";
 
 const MobileMenu = () => {
     const [closeMobileMenu, setCloseMobileMenu] = useState(false);
