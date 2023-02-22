@@ -1,0 +1,164 @@
+@import "../../variables";
+
+.hamburgerMenu{
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  z-index: 10;
+  background: $color-background;
+  &:focus {
+    outline: none;
+  }
+}
+
+.closeBtn {
+
+}
+
+.content{
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    right: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.searchHolder{
+    display: flex;
+    padding: 2rem 0rem;
+
+    @media screen and (max-width: $mobile-width) {
+        max-width: 400px;
+        display: flex;
+        flex-direction: column;    
+        border-bottom: 0px solid rgba(151,151,151,0.1);
+        padding: 0.6rem;
+      }
+      @media screen and (min-width: $tablet-width) {
+        max-width: $tablet-width;
+  
+      }
+      @media screen and (min-width: 900px) {
+        max-width: 1095px;
+      }
+
+    .searchTitle{
+        top:30%;
+        display: flex;
+        flex: 0 1 20%;
+        justify-content: center;
+        margin-bottom: 100rem;
+        span {
+            font-family: $fontInter;
+            font-size: 32px;
+            font-weight: 900;
+
+            &.titleMy {
+                color: $color-red;
+            }
+            &.titleNews {
+                color: $color-black;
+            }
+        }
+
+        @media screen and (max-width: $mobile-width) {
+            max-width: 400px;
+            margin-bottom: 0.5rem;
+          }
+          @media screen and (min-width: $tablet-width) {
+            max-width: $tablet-width;
+          }
+          @media screen and (min-width: 900px) {
+            max-width: 1095px;
+          }     
+    }
+
+    .inputHolder {
+        position: relative;
+        top:10px;
+        flex: 0 1 60%;
+        display: flex;
+        height: 50px;
+        justify-content: flex-start;
+        background: $color-white;
+        padding: 5px;
+        border-radius: 10px;
+        box-shadow: 0px 1px 2px -1px $color-box-shadow;
+        
+        @media screen and (max-width: $mobile-width) {
+            display: flex;
+            justify-content: center;
+          }
+          @media screen and (min-width: $tablet-width) {
+            max-width: $tablet-width;   
+          }
+          @media screen and (min-width: 900px) {
+            max-width: 1095px;
+          }
+
+        .searchIcon {
+            margin: auto 15px;
+            font-size: 20px;
+            color: #A5A5A4;
+        }
+
+        .searchInput {
+            flex: 1 1 auto;
+            outline: none;
+            border: none;
+            ::placeholder {
+                color: $color-grey;
+                opacity: 0.4;
+                font-size: 15px;
+                font-family: $fontInterV;
+            }
+        }
+    } 
+}
+
+.iconBar{
+    position: relative;
+    top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.iconBarItems
+{
+  width: 63px;
+  height:63px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: $fontInterVSemi;
+  font-size: 10px;
+  line-height: 14px;
+  text-align: center;
+  letter-spacing: 0.1px;
+  color: $color-grey;
+  padding: 14px 0px;
+  transition: all 0.3s ease;
+}
+
+.linkActive {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: $fontInterVSemi;
+  font-size: 10px;
+  line-height: 14px;
+  text-align: center;
+  letter-spacing: 0.1px;
+  color: $color-red;
+  background-color: $color-white;
+  width: 63px;
+  height:63px;
+  border-radius: 5px;
+  box-shadow: 0px 1px 2px -1px $color-box-shadow;
+  transition: all 0.3s ease;
+}
